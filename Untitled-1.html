@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js</title>
+</head>
+<body></body>
+<script>
+function titleCase1(str) {  
+    //将字符串分解为数组并将其小写化  
+    var convertToArray = str.toLowerCase().split(" ");  
+  
+    for (var i = 0; i < convertToArray.length; i++) {  
+        var char = convertToArray[i].charAt(0);  
+        //使用 replace()方法将数组中的每个首字母大写化  
+        convertToArray[i] = convertToArray[i].replace(char, function replace(char) {  
+            return char.toUpperCase();  
+        });  
+    }  
+    return convertToArray.join(" ");  
+}  
+console.log(titleCase1("hellow world"));  
+
+
+
+
+
+    
+
+
+   
+</script>
+</html>
